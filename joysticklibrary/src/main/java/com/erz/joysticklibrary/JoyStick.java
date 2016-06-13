@@ -212,6 +212,10 @@ public class JoyStick extends View {
     public double getAngleDegrees() {
         return Math.toDegrees(angle);
     }
+    
+    public double getAnglePositiveDegrees() {
+        return (getAngleDegrees() + 360) % 360;
+    }
 
     public void enableStayPut(boolean enable) {
         this.stayPut = enable;
