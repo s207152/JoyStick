@@ -93,8 +93,8 @@ public class JoyStick extends View {
         if (attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.JoyStick);
             if (typedArray != null) {
-                padColor = typedArray.getColor(R.styleable.JoyStick_padColor, Color.WHITE);
-                buttonColor = typedArray.getColor(R.styleable.JoyStick_buttonColor, Color.RED);
+                padColor = typedArray.getColor(R.styleable.JoyStick_joystickPadColor, Color.WHITE);
+                buttonColor = typedArray.getColor(R.styleable.JoyStick_joystickButtonColor, Color.RED);
                 stayPut = typedArray.getBoolean(R.styleable.JoyStick_stayPut, false);
                 percentage = typedArray.getInt(R.styleable.JoyStick_percentage, 25);
                 if (percentage > 50) percentage = 50;
