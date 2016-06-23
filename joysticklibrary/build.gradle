@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 23
@@ -24,15 +24,16 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.novoda:bintray-release:0.3.4'
+//        classpath 'com.novoda:bintray-release:0.3.4'
+        classpath 'com.android.tools.build:gradle:2.1.2'
     }
 }
 
-publish {
-    userOrg = 'erz05'
-    groupId = 'com.github.erz05'
-    artifactId = 'JoyStick'
-    version = '1.0.2'
-    description = 'Android Library for JoyStick View'
-    website = 'https://github.com/erz05/JoyStick'
-}
+//publish {
+//    userOrg = 'erz05'
+//    groupId = 'com.github.erz05'
+//    artifactId = 'JoyStick'
+//    version = '1.0.2'
+//    description = 'Android Library for JoyStick View'
+//    website = 'https://github.com/erz05/JoyStick'
+//}
